@@ -11,8 +11,14 @@ upload:
 	python setup.py sdist upload -r test
 	python setup.py bdist_wheel upload -r test
 
+upload-pypi:
+	twine upload dist/*
+
 install:
 	pip install -i https://testpypi.python.org/pypi mypackage
+
+install-requirements:
+	pip install setuptools wheel twine
 
 clean:
 	rm -rf *.pyc
