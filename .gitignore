@@ -1,7 +1,7 @@
 *.pyc
 *.bak
-mypackage/build
-mypackage/dist
-mypackage/.tox/
-mypackage/UNKNOWN.egg-info/
+build/
+dist/
+.tox/
+UNKNOWN.egg-info/
 
