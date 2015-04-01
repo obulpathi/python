@@ -1,6 +1,6 @@
 from paste.request import parse_formvars
 
-def app(environ, start_response):
+def app(environ, start_response):    
     fields = parse_formvars(environ)
     if environ['REQUEST_METHOD'] == 'POST':
         start_response('200 OK', [('content-type', 'text/html')])
