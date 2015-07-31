@@ -5,7 +5,7 @@ from memory_profiler import profile
 def my_func():
     gc.set_debug(gc.DEBUG_LEAK)
     a = [1] * (10 ** 7)
-    b = [1] * (10 ** 5)
+    b = [1] * (10 ** 4)
 
     del a
     del b
